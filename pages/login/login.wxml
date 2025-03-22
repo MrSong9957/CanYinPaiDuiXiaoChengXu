@@ -1,0 +1,13 @@
+<!-- 登录页面容器 -->
+<view class="login-container">
+    <!-- 头部区域 -->
+  <view class="header">
+    <text class="title">餐厅排队登录</text>
+    <text class="subtitle">请使用微信一键登录开始取号</text>
+  </view>
+  
+    <!-- 微信登录按钮 -->
+  <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="handleLogin">
+    微信一键登录
+  </button>
+</view>

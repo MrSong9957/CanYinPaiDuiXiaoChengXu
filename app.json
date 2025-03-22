@@ -1,0 +1,24 @@
+{
+  // 小程序页面配置
+  "pages": [
+    "pages/index/index",    // 首页路径
+    "pages/login/login"     // 登录页路径
+  ],
+    // 全局窗口配置
+  "window": {
+    "navigationBarTitleText": "餐厅排队系统",
+    "navigationBarBackgroundColor": "#3883FA",
+    "navigationBarTextStyle": "white"
+  },
+    // 使用扩展库配置
+  "useExtendedLib": {
+    "weui": true
+  },
+  "permission": {
+    "scope.userInfo": {
+      "desc": "用于获取您的用户信息以完成登录"
+    }
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

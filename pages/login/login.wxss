@@ -1,0 +1,36 @@
+/* 登录容器样式 */
+.login-container {
+  padding: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 头部区域样式 */
+.header {
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+
+/* 主标题样式 */
+.title {
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 20rpx;
+}
+
+/* 副标题样式 */
+.subtitle {
+  font-size: 28rpx;
+  color: #666;
+}
+
+/* 登录按钮样式 */
+.login-btn {
+  width: 80%;
+  margin-top: 40rpx;
+  background-color: #07c160;
+  color: white;
+  border-radius: 50rpx;
+}
