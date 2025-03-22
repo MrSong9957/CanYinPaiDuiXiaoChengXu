@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.shop-icon {
+  width: 160rpx;
+  height: 160rpx;
+  margin-bottom: 40rpx;
+  border-radius: 50%;
+  background-color: #f0f0f0;
+}
+
+.shop-name {
+  font-size: 36rpx;
+  margin-bottom: 60rpx;
+}
+
+.login-btn,
+.scan-btn {
+  width: 70%;
+  margin: 20rpx 0;
+  background-color: #07c160;
+  color: white;
+  border-radius: 50rpx;
+}
+
+.modal {
+  position: fixed;
+  bottom: -33.3vh;
+  left: 0;
+  right: 0;
+  height: 33.3vh;
+  background: rgba(255,255,255,0.95);
+  transition: all 0.3s ease;
+}
+
+.modal.show {
+  bottom: 0;
+}
+
+.modal-content {
+  padding: 40rpx;
+  height: 100%;
+}
+
+.confirm-btn {
+  position: absolute;
+  bottom: 40rpx;
+  left: 40rpx;
+  right: 40rpx;
+  background-color: #07c160;
+  color: white;
+  border-radius: 50rpx;
+}

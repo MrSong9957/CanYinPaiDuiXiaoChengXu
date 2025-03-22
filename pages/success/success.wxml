@@ -1,0 +1,3 @@
+<view class="container">
+  <text class="success-text">登录成功</text>
+</view>

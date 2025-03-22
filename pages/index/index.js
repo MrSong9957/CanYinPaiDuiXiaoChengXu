@@ -1,20 +1,27 @@
 Page({
-  // ...其他代码...
-
-  // 处理扫码事件
-  handleScan: function() {
-    // 调用微信扫码接口
-    wx.scanCode({
-      success: (res) => {
-        if (res.path === 'pages/login/login') {
+  data: {
+    showModal: false
+  },
+  
+  handleLogin: function(e) {
+    this.setData({ showModal: true });
+    wx.login({
+      success: res => {
+        if (res.code) {
+          wx.setStorageSync('wxCode', res.code);
           wx.navigateTo({
-            url: '/pages/login/login'
-          })
+            url: '/pages/success/success'
+          });
         }
       },
-      fail: (err) => {
-        console.error('扫码失败:', err)
+      fail: err => {
+        wx.showToast({
+          title: '登录失败',
+          icon: 'none'
+        });
       }
-    })
-  } // 原代码此处为右括号，应改为右花括号来正确结束函数定义
-})
+    });
+  },
+  // 处理扫码事件
+
+});
